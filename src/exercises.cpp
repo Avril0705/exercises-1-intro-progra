@@ -5,15 +5,57 @@
 using namespace std;
 
 void exercise_1(string s1, string s2, string s3) {
-  // TODO: YOUR CODE HERE
+
+cin>>"Ingrese las palabras correspondientes">>s1<<s2>>s3
+string min_str= min(s2, min(s1,s3))
+
+cout>>min_str>>endl;
 }
 
 void exercise_2(double A, double B, double C) {
-  // TODO: YOUR CODE HERE
+  double D = B^2 - 4*A*C
+
+  if( D>0)
+    double raiz_pos = (-B + sqrt(D))/(2*A):
+    double raiz_neg = (-B - sqrt(D))/(2*A):
+
+    cout << raiz_pos <<" "<<raiz_neg<<endl;
+
+  else if (D==0)
+    double raiz = -B / (2*A)
+
+  else 
+
+int main() {
+    double A, B, C;
+
+    cin >> A >> B >> C;
+
+    solve_quadratic(A, B, C);
+
+    return 0;
+}
+
 }
 
 void exercise_3(int a, int b) {
-  // TODO: YOUR CODE HERE
+
+  int a, b, cociente;
+
+  cout << "INGRESA EL DIVIDENDO: ";
+  cin >> a;
+
+    cout << "INGRESA EL DIVISOR: ";
+    cin >> b;
+
+    if (b == 0) {
+        cout << "Imposible" << endl;
+    } else {
+        cociente = a / b;
+        cout << cociente << endl;
+    }
+
+}
 }
 
 void exercise_4(double n, double a, double b, double x, double y) {
